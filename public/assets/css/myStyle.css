@@ -1,0 +1,41 @@
+div, .gdAnswer, .badAnswer{
+    font-weight:bold;
+}
+
+div{
+    font-size:30px;
+}
+
+.PAClickable{
+    background-color:#c0d9fb;
+    border-style:solid;
+    border-color:gray;
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    border-radius:7px;
+    box-shadow:2px 2px black;
+}
+
+.PAClickable:hover{
+    background-color:white;
+    color:blue;
+}
+
+.quizSlogan{
+    background-color:black;
+    color:cyan;
+    padding:70px 20px;
+    font-size:50px;
+    text-align: center;
+    border-radius:20px;
+    box-shadow: 7px 7px gray;
+}
+
+.quiz_main_header{
+    text-align:center;
+    background-color:black;
+    color:cyan;
+    padding:10px;
+    border-radius:30px;
+}

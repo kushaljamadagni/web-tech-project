@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# QUIZ: 4 - Client/Server with MongoDB and React
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Aim
+To build a program that execute customized-quiz: "**memorization**", "**flashcard**", "**true/false**", "**multiple choice questions**") everything is controlled totally by a **Graphic User Interface**.
 
-## Available Scripts
+The structure is a full "**3-tier Architecture**" with a **MVC**'s model.
 
-In the project directory, you can run:
+**Goal**: learn how to create - dynamically or statically - object (**button**, **radio**, **form**, etc.) and how to handle them.
 
-### `npm start`
+## Technologies
+This is a version with **client-server** with utilisation of **MongoDB** for persistence and **ReactJS** for a reactive application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### The Relationship Between React Components:
 
-### `npm test`
+To see the relationship between **React** components in this project:
+![alt text](public/assets/img/reactComponents.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Goal**: we have all sort of transmission of data:
 
-### `npm run build`
+* "**Vertical**": **parent** <--> **children** <--> **grand-children** <--> ...
+* "**Horizontal**": interaction between **siblings**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### To Add New **Quiz**:
 
-### `npm run eject`
+Add General Informations:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![alt text](public/assets/img/add-1.jpg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add Question:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![alt text](public/assets/img/add-2.jpg)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Add Proposed Answers:
 
-## Learn More
+![alt text](public/assets/img/add-3.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### To use **Quiz**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![alt text](public/assets/img/quizing.jpg)
+ 
+## Execution
+1. Execute "**npm install**" to install dependencies
+2. No need to start a database server: we are using the "**mLab**"
+3. Execute "**npm run build**" to execute **webpack** following by run the **server**.
+4. Open a browser and enter any of following:
+	* "**localhost:8080**" to get the homepage,
+	* "**localhost:8080/add**" to add more test,
+	* "**localhost:8080/play**" to play a test ...
 
-### Code Splitting
+## Limitation
+We need to manage **lifecycle** of each connection: each user should have his (her) own test so they could "**play**" at the same time (which, with this version, we could not do it). However, it should be easy to fix: create **class/object** for each user and put them into a sort of **pool**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Evolution
+* **Short term**: have selection of quizzes, mix them, complete **CRUD** operations. Use **Angular** and/or **ReactJS** for the **view**.
+* **Long term**: add **tests** into a global structure (we could use the **Dewey Decimal Classification**) so we could have all sort of data about each subject (mostly for personal use so we could centralize all acknowledge in a same place): 
+	- **documents**
+	- **tests**
+	- **videos**
+	- etc.
 
-### Analyzing the Bundle Size
+## Author
+* Dinh HUYNH - All Rights Reserved!
+* dinh.hu19@yahoo.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
