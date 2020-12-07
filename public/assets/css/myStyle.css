@@ -4,38 +4,83 @@ div, .gdAnswer, .badAnswer{
 
 div{
     font-size:30px;
+
 }
 
 .PAClickable{
+ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-color:#c0d9fb;
     border-style:solid;
     border-color:gray;
     text-align:center;
     padding:10px;
     margin:10px;
-    border-radius:7px;
-    box-shadow:2px 2px black;
+    border-radius:30px;
+
 }
 
 .PAClickable:hover{
+
     background-color:white;
     color:blue;
 }
 
 .quizSlogan{
+ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-color:black;
-    color:cyan;
-    padding:70px 20px;
+    color:#2ECC40;
+    padding:300px 20px;
     font-size:50px;
     text-align: center;
-    border-radius:20px;
-    box-shadow: 7px 7px gray;
+    border-radius:10px;
+
 }
 
 .quiz_main_header{
     text-align:center;
-    background-color:black;
-    color:cyan;
+    color:#85144b;
     padding:10px;
     border-radius:30px;
 }
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 700% 700%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+$wht: #fff;
+$blk: #000;
+$sq: 120px;
+$offset:$sq/25;
+$brd-radius:8px;
+
+@mixin flexy-boi() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  @include flexy-boi();
+  min-height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+

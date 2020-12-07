@@ -13,7 +13,7 @@ export default class Main extends React.Component {
       <div className="container">
         <br/>
         <div className="quiz_main_header">
-          <h2><strong>Learn More With PES QUIZ/strong></h2>
+          <h2><strong>Learn More With Quizzes of PES</strong></h2>
           <hr />
           <p>
             <a href="#/" className="btn btn-primary btn-lg">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
