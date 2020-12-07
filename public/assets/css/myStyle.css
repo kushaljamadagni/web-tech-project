@@ -28,7 +28,7 @@ div{
 .quizSlogan{
  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-color:black;
-    color:#2ECC40;
+    color:#FFEFD5;
     padding:300px 20px;
     font-size:50px;
     text-align: center;
@@ -38,7 +38,7 @@ div{
 
 .quiz_main_header{
     text-align:center;
-    color:#85144b;
+    color:#111111;
     padding:10px;
     border-radius:30px;
 }
